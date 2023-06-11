@@ -1,7 +1,7 @@
 import "./App.css";
 import KommunicateChat from "./chat.js";
 import React from "react";
-import Kommunicate from "@kommunicate/kommunicate-chatbot-plugin";
+// import Kommunicate from "@kommunicate/kommunicate-chatbot-plugin";
 
 // cont[transferflag, settransferflag] = React.useState();
 
@@ -43,7 +43,7 @@ class App extends React.Component
         </div>
       </div>
 
-      <KommunicateChat/>
+      {/* <KommunicateChat/> */}
       
     </div>
   );}

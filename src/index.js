@@ -2,7 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import './index.css';
 import App from "./App";
-// import Kommunicate from "@kommunicate/kommunicate-chatbot-plugin";
+import Kommunicate from "@kommunicate/kommunicate-chatbot-plugin";
 
 // Kommunicate.init("kommunicate-support", {
 //   automaticChatOpenOnNavigation: true,
@@ -27,10 +27,10 @@ window.addEventListener('click', function(e){
 })
 
 console.log(app_id);*/
-// Kommunicate.init("kommunicate-support", {
-//   automaticChatOpenOnNavigation: true,
-//   popupWidget: true
-// });
+Kommunicate.init(process.env.REACT_APP_ID, {
+  automaticChatOpenOnNavigation: true,
+  popupWidget: true
+});
 // window.Kommunicate.launchConversation();
 
 
