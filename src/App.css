@@ -1,0 +1,55 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #434397 !important;
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+  height: 100vh;
+  position: relative;
+}
+
+.content{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  margin-top: auto;
+  
+}
+
+h1 {
+  margin: 0;
+  color: white;
+  font-size: 5rem;
+}
+
+p {
+  color: white;
+  font-size: 5vh;
+}
+
+button {
+  background-color: #5553b7;
+  padding: 20px;
+  margin-top: 100px;
+  color: white;
+  font-size: 30px;
+  border-radius: 10px;
+  border-color: white;
+  outline-offset: 0px;
+  outline: white 1px solid;
+  animation: click;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes click {
+  from{outline: 0px rgba(255,255,255,1) solid;}
+  to{outline:10px rgba(255,255,255,0) solid;}
+}
+
+button:hover {
+  animation: none;
+  outline: white 3px solid;
+}
