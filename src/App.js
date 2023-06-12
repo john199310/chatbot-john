@@ -1,5 +1,4 @@
 import "./App.css";
-import KommunicateChat from "./chat.js";
 import React from "react";
 // import Kommunicate from "@kommunicate/kommunicate-chatbot-plugin";
 
@@ -18,12 +17,12 @@ class App extends React.Component
     
   // }
 
-  transferAgentBtnClick = () => {
-    if(this.state.clickflg === 0)
-      this.setState({'clickflg' : 1});
-    else
-      this.setState({'clickflg' : 0});
-  }
+  // transferAgentBtnClick = () => {
+  //   if(this.state.clickflg === 0)
+  //     this.setState({'clickflg' : 1});
+  //   else
+  //     this.setState({'clickflg' : 0});
+  // }
   
   render() {
     
@@ -32,15 +31,15 @@ class App extends React.Component
       <div className="content">        
         <h1>Hello!<br/> MD FAISAL</h1>
         <p> To customize plugin, click button at right bottom </p>
-        <div className="Km-btn">
+        {/* <div className="Km-btn">
           <a
             //href="https://docs.kommunicate.io/docs/web-installation.html#step-2-add-the-customized-kommunicate-plugin-to-your-website"
             //target="_blank"
             //rel="noopener noreferrer"
           >
-            <button id = 'transferAgent' onClick={this.transferAgentBtnClick}>Transfer to Agent</button>
+            <button id = 'transferAgent'>Transfer to Agent</button>
           </a>
-        </div>
+        </div> */}
       </div>
 
       {/* <KommunicateChat/> */}
